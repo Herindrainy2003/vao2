@@ -1,0 +1,17 @@
+2023-07-14T18:16:24+00:00 CRITICAL Uncaught Error: Failed opening required 'C:\xampp\htdocs\wordpress/wp-content/themes/astra/inc/core/class-astra-theme-options.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\wordpress\wp-content\themes\astra\functions.php:34
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-settings.php(591): include()
+#1 C:\xampp\htdocs\wordpress\wp-config.php(96): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#4 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\astra\functions.php on line 34
+
+2023-07-14T18:38:55+00:00 CRITICAL Maximum execution time of 300 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\src\Transport\Curl.php on line 205
+
+2023-07-14T18:57:16+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\wordpress\wp-includes\Requests\src\Transport\Curl.php on line 205
+
+2023-07-14T19:17:56+00:00 CRITICAL Maximum execution time of 120 seconds exceeded dans C:\xampp\htdocs\wordpress\wp-includes\Requests\src\Transport\Curl.php à la ligne 205
+
+2023-07-14T19:23:21+00:00 CRITICAL Maximum execution time of 120 seconds exceeded dans C:\xampp\htdocs\wordpress\wp-includes\Requests\src\Transport\Curl.php à la ligne 205
+

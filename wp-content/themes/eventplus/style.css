@@ -1,0 +1,1019 @@
+/*
+Theme Name: EventPlus
+Theme URI: https://www.nayrathemes.com/eventplus-free/
+Template: eventpress
+Author: Nayra Themes
+Author URI: https://www.nayrathemes.com/
+Description: EventPlus WordPress theme has a professional and sleek design that is ideal for creating websites for various types of events. Whether you are planning a conference, seminar, workshop, or any other event, this theme has everything you need to make your website stand out and attract attendees. View the demo of EventPlus Pro https://www.nayrathemes.com/demo/pro/?theme=eventplus
+Version: 2.8
+Tested up to: 6.2
+Requires PHP: 5.6
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: eventplus
+Slug: eventplus
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-colors, custom-header, custom-menu,  custom-logo, featured-image-header, featured-images, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, blog, e-commerce, holiday, editor-style, grid-layout
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+/*
+==========================================
+    01. Navbar
+==========================================
+*/
+
+.logo-bbc {
+    display: block;
+	line-height: inherit;
+}
+
+.logo-bbc a.navbar-brand.logo {
+    padding: 0;
+	display: block;
+}
+
+.logo-bbc img {
+    width: 170px;
+	}
+
+.logo-bbc .site-title, .logo-bbc .site-description {
+    line-height: normal;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.logo-bbc .site-title {
+    font-weight: 600;
+}
+
+.logo-bbc .site-description {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.navbar {
+    padding: 15px !important;
+}
+.navbar-flex {
+	max-width: 540px;
+}
+
+@media screen and (max-width: 782px){
+	html #wpadminbar ~ .site div#sticky-wrapper.is-sticky .sticky-nav {
+		top: 46px !important;
+	}
+}
+
+@media (min-width: 992px){
+	.header-wrap {
+		position: absolute;
+		width: 100%;
+		z-index: 3;
+	}
+	
+	.logo-bbc .site-title {
+		color: #ffffff;
+	}
+}
+
+@media (min-width: 1200px){	
+	.navbar-flex {
+		max-width: 730px;
+	}
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+@media (min-width: 992px){
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-right: 0.5rem;
+		padding-left: 0.5rem;
+	}
+}
+
+.navbar-nav>li>a {
+    color: #ffffff;
+	line-height: 24px;
+    margin-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
+    position: relative;
+	white-space: normal;
+    -webkit-transition: .4s all;
+    transition: .4s all;
+}
+.navbar-nav > li.active > a > i, .navbar-nav > li > a > i {
+    position: absolute;
+	top: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	text-align: center;
+    font-size: 20px;
+	visibility: hidden;
+    z-index: 0;
+    opacity: 0;
+	-webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+	-webkit-transition: .4s all;
+    transition: .4s all;
+}
+
+.navbar-nav > li.active > a > i,
+.navbar-nav > li > a:hover > i,
+.navbar-nav > li.focus > a > i {
+	-webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.mean-container .mean-nav ul li a > i {
+	display: none;
+}
+
+.navbar > .nav-item {
+    position: relative;
+    padding: 18px 0;
+}
+
+ul.nav-left,
+ul.nav-left li,
+ul.navbar-nav,
+ul.navbar-nav > li.nav-item,
+.header-right ul li {
+    display: inline-block;
+	margin: 0;
+}
+
+.mean-nav li a img, .mean-nav li a br,
+.dropdown-item img, .dropdown-item br {
+	display: none;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border: 2px solid;
+    font-weight: 700;
+    box-shadow: 0px 0px 8px 0px rgba(5, 116, 247, 0.5);
+    margin-right: 0;
+    margin-left: 0;
+    padding: 5px 7px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+	border-radius: 30px;
+}
+
+.nav-btn i{
+	width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-left: 5px;
+    color: initial;
+    background: #ffffff;
+}
+
+.hover-effect2.nav-btn {
+	text-transform: capitalize;
+}
+
+.hover-effect2.nav-btn:after {
+    background: #fff;
+}
+
+.nav-btn i {
+	margin-right: 0;
+}
+
+#header-top .eventpress-top-right .widget:nth-child(n+2){
+	margin-right: 0;
+}
+
+#header-top .widget_social_widget{
+    padding: 0
+}
+
+.widget_social_widget ul{
+    display: inline-flex;
+}
+
+.widget_social_widget li{
+    padding: 14px 15px;
+	position: relative;
+}
+
+#header-top .widget_social_widget li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #ffffff;
+    opacity: 0.2;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+}
+
+/* Sticky */
+div#sticky-wrapper {
+    background: #fff;
+	min-height: 74px;
+}
+
+div#sticky-wrapper.is-sticky .sticky-nav {
+    background: rgba(0,0,0,0.5) !important;
+    background-image: none;
+    box-shadow: 0px 0 10px rgb(0 0 0 / 20%);
+	min-height: 74px;
+}
+
+.is-sticky .sticky-nav {
+    -webkit-animation: fadeInDown 1s both;
+    animation: fadeInDown 1s both;
+    z-index: 999;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    cursor: pointer;
+}
+
+.is-sticky .navbar-area .logo img {
+    padding: 24px 0;
+}
+
+/* Mean Menu */
+.navbar-wrapper {
+    position: relative;
+}
+
+.navbar-right {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-pack: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
+}
+
+#header-top.header-top-bg.eventplus-header-top{
+	background: transparent;
+}
+
+@media only screen (min-width: 992px){
+	#header-top.header-top-bg.eventplus-header-top{
+		height: 50px;
+	}
+}
+
+#header-top .widget {
+    padding: 10px 20px;
+}
+
+#header-top .eventpress-top-right {
+    display: block;
+}
+
+#header-top .eventpress-top-right .widget:first-child {
+    margin-right: 0;
+}
+
+#header-top .widget:last-child:after{
+	opacity: 0.5;
+}
+
+.header-top-bg.eventplus-header-top .container, .eventplus-navbar-wrapper > .navbar {
+	padding: 0!important;
+}
+
+.eventplus-navbar-wrapper > .navbar >.container{	
+	border: 1px solid rgba(255,255,255,0.5);
+	padding: 15px;
+}
+
+.mobile-menu-area {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    width: 100%;
+}
+
+.mean-container .mean-bar {
+    background: transparent !important;
+}
+
+.mean-container a.meanmenu-reveal {
+    padding: 4px 9px;
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+	top: -8px;
+}
+
+.mean-container .mean-nav>ul {
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+@media only screen and (min-width: 992px){
+	.eventplus-navbar-wrapper > .navbar >.container, .header-top-bg.eventplus-header-top .container{	
+		background: rgba(0 0 0 / 50%);
+	}
+	
+	div#sticky-wrapper{
+	background: transparent;
+	}
+	
+	div#sticky-wrapper.is-sticky .eventplus-navbar-wrapper > .navbar > .container{
+		background: transparent;
+		border: none;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.mean-container .mean-nav {
+		margin-top: 16px;
+	}
+	
+	.is-sticky .mean-container a.meanmenu-reveal {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+
+/* Mobile Language Cart and search */
+
+.header-right-mbl {
+    position: absolute;
+    top: 33px;
+    right: 46px;
+    width: 100%;
+}
+
+.header-right-mbl ul {
+    text-align: right;
+    color: #0e0e0e;
+}
+
+.header-right-mbl ul li>div,
+.header-right-mbl ul li a {
+    padding: 3px 4px;
+    background: transparent;
+    display: block;
+}
+
+.header-right-mbl ul li a {
+    color: #0e0e0e;
+}
+
+.header-right-mbl ul li.ln a {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+}
+
+.header-right-mbl ul li.ln .ln-flag {
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.header-right-mbl ul li {
+    display: inline-block;
+}
+
+/* Search*/
+
+.search__open:focus{
+	outline-offset: -3px;
+}
+
+.search__open i{
+	color: #0e0e0e;
+}
+
+.search__area {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.08);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transform: translateY(-200%);
+    transform: translateY(-200%);
+    -webkit-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s;
+    z-index: 99999999;
+}
+
+.search__area .search__inner {
+    position: relative;
+}
+
+.search__area .search__inner form {
+    margin: 4em 0;
+    padding: 0 40px 0 0;
+    position: relative;
+    text-align: center;
+}
+
+.search__area .search__inner form input {
+    background: #f8f8f8;
+    width: 100%;
+    height: 60px;
+    padding: 15px;
+    border: none;
+}
+
+.search__area .search__inner form button {
+    border: 0 none;
+    border-radius: 0;
+    cursor: pointer;
+    height: 60px;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 60px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background: #f8f8f8;
+    color: #0e0e0e;
+}
+
+.search__area .search__inner form button:hover {
+    color: #fff;
+}
+
+.search__area .search__inner .search__close__btn {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #0e0e0e;
+    cursor: pointer;
+}
+
+.search__close__btn .search__close__btn_icon i {
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+}
+
+.search__box__show__hide .search__area {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: all 300ms ease 0s;
+    transition: all 300ms ease 0s;
+}
+
+.cart-icon-wrapper, .search__open {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: #ffffff;
+	margin-right: 5px;
+}
+
+.cart-icon-wrapper .badge{
+	position: absolute;
+    top: -7px;
+    right: 0;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+==========================================
+    02. Slider
+==========================================
+*/
+
+header {
+    position: relative;
+    overflow: hidden;
+	padding-bottom: 2px;
+}
+
+.header-single-slider figure {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* owl */
+
+.slider-wrapper .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.slider-wrapper  .owl-dots button {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin: 0 0;
+    -webkit-transform: scale(-0.75);
+    transform: scale(-0.75);
+    cursor: pointer;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+header .separator {
+    z-index: 1;
+}
+
+.header-single-slider figure img {
+    width: 100%;
+}
+
+.header-single-slider .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    padding: 0 15px;
+    z-index: 0;
+}
+
+.header-single-slider hr {
+    height: 1px;
+    border: 0px;
+    width: 400px;
+    background: #fff;
+    margin: 20px 0 30px;
+}
+
+.header-single-slider a.hover-effect2 {
+    margin-right: 20px;
+    margin-top: 48px;
+}
+
+[class*='slider-btn-']{
+	padding: 5px 8px;
+    border-radius: 30px;
+}
+
+[class*='slider-btn-'] i{
+	width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    border-radius: 30px;
+    color: initial;
+    background: #ffffff;
+}
+
+[class*='slider-btn-']:hover i, [class*='slider-btn-']:focus i{
+	background: none;
+	border: 1px solid;
+}
+
+/* Slider 01 Color */
+.header-single-slider.slider01 {
+    color: #fff;
+}
+
+.header-single-slider.slider01 a.hover-effect2:hover {
+    color: #fff;
+    border-color: #0e0e0e;
+}
+
+
+/* Slider 02 Color */
+
+.header-single-slider.slider02 .hover-effect2:hover {
+    color: #fff;
+}
+
+.header-single-slider.slider02 .hover-effect2.active {
+    color: #fff;
+}
+
+/* Slider 03 Color */
+
+.header-single-slider.slider03 {
+    color: #fff;
+}
+
+
+header .separator {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
+
+figure {
+    margin-bottom: 0 !important;
+}
+
+.header-slider .owl-dots, .header-slider .owl-nav {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    line-height: 0;
+}
+
+.header-slider .owl-nav [class*=owl-] {
+	display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin: -23px 0 0;
+    display: block;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease 0s;
+    color: #ffffff;
+    text-align: center;
+    z-index: 200;
+    border-radius: 3px;
+    border: 1px solid #ececec;
+    box-sizing: initial;
+    opacity: 0;
+	padding: 0;
+	border: 5px solid #ffffff;
+}
+
+.header-slider .owl-nav [class*=owl-] {
+    border-radius: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+}
+
+.header-slider .owl-nav [class*=owl-]:hover {
+	background: #0e0e0e;
+}
+
+.header-slider .owl-nav [class*=owl-] > i {
+	font-size: 200%;
+}
+
+.header-slider .owl-nav .owl-prev {
+    left: 0;
+}
+
+.header-slider .owl-nav .owl-next {
+    right: 0;
+}
+
+.header-slider:hover .owl-prev {
+    right: auto;
+    left: 25px;
+    opacity: 1;
+}
+
+.header-slider:hover .owl-next {
+    left: auto;
+    right: 25px;
+    opacity: 1;
+}
+
+.header-slider h3 + a{
+	padding: 5px 7px;
+}
+
+.header-slider h3 + a > i{
+	width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin-left: 5px;
+    color: initial;
+    background: #ffffff;
+}
+
+[class*='owl-'].disabled{
+	display: none;
+}
+
+/* Responsive */
+@media only screen and (min-width: 992px){
+	.header-single-slider a.hover-effect2 {
+		margin-top: 18px;
+	}
+}
+
+@media only screen and (max-width: 540px){
+	.header-single-slider a[class*='slider-btn-'] {
+		padding:3px 6px;
+	}
+	
+	[class*='slider-btn-'] i{
+		width:20px;
+		height: 20px;
+	}
+	
+	.header-single-slider h1 {
+		line-height: 46px;
+	}
+	
+	.header-single-slider a.hover-effect2[class*='slider-btn'] {
+		margin-top: 15px;
+	}
+}
+
+@media only screen and (max-width: 991px){
+	.header-single-slider a.hover-effect2 {
+		margin-top: 30px;
+	}
+	
+	.header-slider .owl-nav [class*=owl-]{
+		width: 30px;
+		height: 30px;
+	}
+}
+
+/*
+==========================================
+    03. About Weding Event
+==========================================
+*/
+
+.wedding-about {
+	position: relative;
+	overflow: visible;
+	background-color: transparent;
+	z-index: 2;
+	padding-top: 0;
+	margin-top: 80px;
+}
+
+.wedding-person figure {
+    height: auto;
+    border-radius: 50%;
+    padding: 5px;
+    max-width: 110px;
+	transition: 1s all;
+	min-height: 110px;
+}
+
+.wedding-person:hover figure:after {
+    -webkit-transform: scale(1) translate(5px,5px);
+    transform: scale(1) translate(5px,5px);    
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);   
+}
+
+.wedding-person figcaption h4 {
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.wedding-person .captions {
+	margin-left: -30px;
+    width: 100%;
+    padding: 10px 20px 10px 50px;
+    border-radius: 0 10px 10px 0;
+	transition: 1s all;
+	min-height: 72.5px;
+}
+
+.wedding-person h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+	font-size: 20px;
+}
+
+.wedding-person p {
+    width: 100%;
+    margin: 0 ;
+	transition: 1s all;
+}
+
+#about-event .row:first-of-type{
+	display: none;
+}
+
+.wedding-person{
+	display: flex;
+	align-items: center;
+}
+
+.wedding-person figure i{
+	font-size: 24px;
+}
+
+.wedding-person:hover .captions, .wedding-person:focus-within .captions, .wedding-person:hover figure, .wedding-person:focus-within figure{
+	background: #ffffff;
+}
+
+.wedding-about .owl-dots {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.wedding-about .owl-dots > .owl-dot {
+    border: none;
+    padding: 0;
+    width: 12px;
+	height: 2px;
+	height: 2px;
+	margin: 0 3px;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.wedding-about .owl-dots > .owl-dot.active {
+    height: 12px;
+    border-radius: 100%;
+}
+
+/* Responsive */
+@media (min-width: 992px){
+	#header + .wedding-about {
+		margin-top: -125px;
+	}
+}
+
+@media (min-width: 1200px){	
+	.wedding-person figure{
+		max-width: 140px;
+		min-height: 140px;
+	}
+	
+	#header + .wedding-about {
+		margin-top: -155px;
+	}
+	
+	.wedding-person .captions {
+		padding: 15px 20px 15px 50px;
+		min-height: 82.5px;
+	}
+}
+
+@media (max-width: 991px) {
+	.wedding-about .owl-dots > .owl-dot{
+		background-color: #575656;
+	}
+	
+	.wedding-person:hover .captions,  .wedding-person:focus-within .captions, .wedding-person:hover figure, .wedding-person:focus-within figure{
+		background: #0e0e0e;
+	}
+	
+	.wedding-person:hover .captions h3,  .wedding-person:focus-within .captions h3{
+		color: #ffffff;
+	}
+}
+
+
+/*
+==========================================
+    04. Counter Section
+==========================================
+*/
+
+.counter-section {
+    color: #fff;
+    position: relative;
+    background-size: cover;
+    z-index: 2;
+	margin-top: 100px;
+}
+
+/*
+==========================================
+*/
+
+.wp-block-search .wp-block-search__button {
+    background: #ff9c00;
+}
+
+.widget_search button:hover, .woocommerce-product-search input[type=submit]:hover {
+	color: #0e0e0e;
+}
+
+
+/*
+==========================================
+    Breadcrumb Section
+==========================================
+*/
+#breadcrumb-area {
+    padding: 226px 0 120px;
+}
+
+
+/*
+==========================================
+    Footer
+==========================================
+*/
+.footer-copyright a{
+	text-decoration: underline !important;
+}
+
+.footer-copyright a:hover {
+	text-decoration: dotted underline !important;
+}
+
+/* ==== */
+
+.wp-block-table figcaption {
+	text-align: center;
+}
+.sidebar .widget .wp-block-group .wp-block-image {
+	margin-bottom: 0;
+}
+ul.wp-block-rss {
+ 	list-style: disc;
+}
+.has-text-color a:hover, .has-text-color a:focus {
+	color: inherit;
+}
+.entry-content ul:last-child {
+	margin-bottom: 0;
+}
+.wp-block-code.has-text-color code {
+	color: inherit;
+}
+.sidebar .widget .wp-block-group .is-nowrap p {
+ 	padding: 0;
+ }
+.sidebar .widget .wp-block-group .wp-block-latest-comments .wp-block-latest-comments__comment .wp-block-latest-comments__comment-date {
+	padding-top: 0.5rem;
+ 	padding-bottom: 0.5rem;
+ 	font-size: 0.875rem;
+}
+
+/*wp-Block-RSS*/
+ul.wp-block-rss {
+	list-style: none;
+	margin-left: 0;
+}
+ul.wp-block-rss li.wp-block-rss__item {
+    margin-bottom: 1rem;
+}
+ul.wp-block-rss li.wp-block-rss__item:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar .widget .wp-block-group .wp-block-pullquote blockquote {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.sidebar .widget .wp-block-group .wp-block-rss .wp-block-rss__item-title > a {
+ 	font-weight: 600;
+}
+
+.wp-block-quote.is-style-large {
+	padding-top: 1.10rem;
+	padding-bottom: 1.10rem;
+}
+
+.sidebar .widget .wp-block-group .wp-block-file, .sidebar .widget .wp-block-group .wp-block-image {
+    padding: 1.563rem 1.000rem 1.563rem;
+}
+
+.widget .wp-block-group .is-vertical a {
+    color: inherit;
+}
+
+.entry-content ol.wp-block-latest-comments {
+	padding-left: 2rem;
+}

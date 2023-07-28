@@ -1,0 +1,84 @@
+2023-07-20T10:18:09+00:00 CRITICAL Uncaught WC_Stripe_Exception: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => L’URL fournie n’est pas valide.
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+    [additional_data:protected] => Array
+        (
+        )
+
+)
+ in C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-api.php:150
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-customer.php(405): WC_Stripe_API::request(Array, 'customers/cus_O...', 'GET')
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-payment-tokens.php(152): WC_Stripe_Customer->get_sources()
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-payment-tokens.php(130): WC_Stripe_Payment_Tokens->woocommerce_get_customer_payment_tokens_legacy(Array, 1, 'stripe')
+#3 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(308): WC_Stripe_Payment_Tokens->woocommerce_get_customer_payment_tokens(Array, 1, 'stripe')
+#4 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-payment-tokens.php(88): apply_filters('woocommerce_get...', Array, 1, 'stripe')
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-payment-gateway.php(163): WC_Payment_Tokens::get_customer_tokens(1, 'stripe')
+#7 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\abstracts\abstract-wc-payment-gateway.php(480): WC_Payment_Gateway->get_tokens()
+#8 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-gateway-stripe.php(229): WC_Payment_Gateway->saved_payment_methods()
+#9 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\checkout\payment-method.php(30): WC_Gateway_Stripe->payment_fields()
+#10 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\checkout\payment.php(30): wc_get_template('checkout/paymen...', Array)
+#12 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#13 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2392): wc_get_template('checkout/paymen...', Array)
+#14 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(308): woocommerce_checkout_payment('')
+#15 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#16 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#17 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\templates\checkout\form-checkout.php(59): do_action('woocommerce_che...')
+#18 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#19 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(359): wc_get_template('checkout/form-c...', Array)
+#20 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#21 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#22 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#23 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(355): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#24 [internal function]: do_shortcode_tag(Array)
+#25 C:\xampp\htdocs\wordpress\wp-includes\shortcodes.php(227): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#26 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\widgets\shortcode.php(130): do_shortcode('[woocommerce_ch...')
+#27 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\base\controls-stack.php(2268): Elementor\Widget_Shortcode->render()
+#28 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\base\widget-base.php(609): Elementor\Controls_Stack->render_by_mode()
+#29 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\base\widget-base.php(750): Elementor\Widget_Base->render_content()
+#30 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\base\element-base.php(449): Elementor\Widget_Base->print_content()
+#31 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\base\element-base.php(1354): Elementor\Element_Base->print_element()
+#32 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\base\element-base.php(449): Elementor\Element_Base->print_content()
+#33 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\base\element-base.php(1354): Elementor\Element_Base->print_element()
+#34 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\base\element-base.php(449): Elementor\Element_Base->print_content()
+#35 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\core\base\document.php(1711): Elementor\Element_Base->print_element()
+#36 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\core\base\document.php(1106): Elementor\Core\Base\Document->print_elements(Array)
+#37 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\frontend.php(1179): Elementor\Core\Base\Document->print_elements_with_wrapper(Array)
+#38 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\frontend.php(1074): Elementor\Frontend->get_builder_content(4391)
+#39 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(308): Elementor\Frontend->apply_builder_in_content('<style>/*! elem...')
+#40 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(205): WP_Hook->apply_filters('<style>/*! elem...', Array)
+#41 C:\xampp\htdocs\wordpress\wp-includes\post-template.php(255): apply_filters('the_content', '<style>/*! elem...')
+#42 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\modules\page-templates\module.php(190): the_content()
+#43 [internal function]: Elementor\Modules\PageTemplates\Module->print_callback()
+#44 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\modules\page-templates\module.php(207): call_user_func(Array)
+#45 C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\modules\page-templates\templates\header-footer.php(19): Elementor\Modules\PageTemplates\Module->print_content()
+#46 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#47 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#48 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#49 {main}
+  thrown dans C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-gateway-stripe\includes\class-wc-stripe-api.php à la ligne 150
+
+2023-07-20T14:54:56+00:00 CRITICAL Maximum execution time of 120 seconds exceeded dans C:\xampp\htdocs\wordpress\wp-content\plugins\jetpack\extensions\extended-blocks\core-cover\core-cover.php à la ligne 9
+
+2023-07-20T14:55:04+00:00 CRITICAL Maximum execution time of 120 seconds exceeded dans C:\xampp\htdocs\wordpress\wp-content\plugins\astra-sites\inc\importers\batch-processing\helpers\class-astra-sites-image-importer.php à la ligne 20
+
+2023-07-20T14:55:25+00:00 CRITICAL Maximum execution time of 120 seconds exceeded dans C:\xampp\htdocs\wordpress\wp-content\plugins\jetpack\extensions\blocks\donations\donations.php à la ligne 15
+
+2023-07-20T14:57:59+00:00 CRITICAL Maximum execution time of 120 seconds exceeded dans C:\xampp\htdocs\wordpress\wp-content\themes\astra\inc\core\class-astra-admin-helper.php à la ligne 14
+
+2023-07-20T14:59:24+00:00 CRITICAL Maximum execution time of 120 seconds exceeded dans C:\xampp\htdocs\wordpress\wp-content\plugins\elementor\includes\controls\repeater.php à la ligne 4
+

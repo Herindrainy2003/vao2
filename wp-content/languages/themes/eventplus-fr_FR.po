@@ -1,0 +1,110 @@
+# Translation of Themes - EventPlus in French (France)
+# This file is distributed under the same license as the Themes - EventPlus package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-04-24 07:38:17+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: fr\n"
+"Project-Id-Version: Themes - EventPlus\n"
+
+#. Description of the theme
+#, gp-priority: high
+msgid "EventPlus WordPress theme has a professional and sleek design that is ideal for creating websites for various types of events. Whether you are planning a conference, seminar, workshop, or any other event, this theme has everything you need to make your website stand out and attract attendees. View the demo of EventPlus Pro https://www.nayrathemes.com/demo/pro/?theme=eventplus"
+msgstr "Le thème WordPress EventPlus possède une conception professionnelle et élégante qui est idéale pour créer des sites web pour divers types d’évènements. Que vous planifiez une conférence, un séminaire, un atelier ou tout autre événement, ce thème possède tout ce dont vous avez besoin pour que votre site web se démarque et attire les participants. Voir la démo d’EventPlus Pro https://www.nayrathemes.com/demo/pro/?theme=eventplus"
+
+#. Theme Name of the theme
+#, gp-priority: high
+msgid "EventPlus"
+msgstr "EventPlus"
+
+#: inc/customize/eventplus-premium.php:36
+msgid "Show Some Love"
+msgstr "Afficher un peu d’amour"
+
+#: inc/customize/eventplus-premium.php:32
+msgid "Free Vs Pro"
+msgstr "Gratuit Vs Pro"
+
+#: inc/customize/eventplus-premium.php:30
+msgid "Get Support"
+msgstr "Obtenir de l’aide"
+
+#: inc/customize/eventplus-premium.php:28
+msgid "View Documentation"
+msgstr "Voir la documentation"
+
+#: inc/customize/eventplus-premium.php:12
+#: inc/customize/eventplus-premium.php:34
+msgid "Upgrade to Pro"
+msgstr "Passer à la version Pro"
+
+#: sections/section-blog.php:78
+msgid "Read More"
+msgstr "Lire la suite"
+
+#: sections/eventpress-breadcrumb.php:46
+msgid "Pricing Categories: %s"
+msgstr "Catégories de prix : %s"
+
+#: sections/eventpress-breadcrumb.php:42
+msgid "Portfolio Categories: %s"
+msgstr "Catégories de portfolio : %s"
+
+#: sections/eventpress-breadcrumb.php:38
+msgid "Author: %s"
+msgstr "Auteur/autrice : %s"
+
+#: sections/eventpress-breadcrumb.php:34
+msgid "Error 404"
+msgstr "Erreur 404"
+
+#: sections/eventpress-breadcrumb.php:30
+msgid "Tag Archives: %s"
+msgstr "Archives du mot-clé : %s"
+
+#: sections/eventpress-breadcrumb.php:26
+msgid "Category Archives: %s"
+msgstr "Archives de la catégorie : %s"
+
+#: sections/eventpress-breadcrumb.php:22
+msgid "Yearly Archives: %s"
+msgstr "Archives annuelles : %s"
+
+#: sections/eventpress-breadcrumb.php:18
+msgid "Monthly Archives: %s"
+msgstr "Archives mensuelles : %s"
+
+#: sections/eventpress-breadcrumb.php:14
+msgid "Daily Archives: %s"
+msgstr "Archives quotidiennes : %s"
+
+#: sections/eventplus-header.php:124
+msgid "Your cart"
+msgstr "Votre panier"
+
+#: header.php:34
+msgid "Skip to content"
+msgstr "Aller au contenu"
+
+#: footer.php:79
+msgid "<a href=\"https://www.nayrathemes.com/eventpress-free/\" target=\"_blank\">EventPress WordPress Theme</a>"
+msgstr "<a href=\"https://www.nayrathemes.com/eventpress-free/\" target=\"_blank\">Thème WordPress EventPress</a>"
+
+#. Author URI of the theme
+#, gp-priority: low
+msgid "https://www.nayrathemes.com/"
+msgstr "https://www.nayrathemes.com/"
+
+#. Author of the theme
+#, gp-priority: low
+msgid "Nayra Themes"
+msgstr "Nayra Themes"
+
+#. Theme URI of the theme
+#, gp-priority: low
+msgid "https://www.nayrathemes.com/eventplus-free/"
+msgstr "https://www.nayrathemes.com/eventplus-free/"
